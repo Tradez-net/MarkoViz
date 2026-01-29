@@ -1,3 +1,6 @@
+# keep personal depot database folder secret, out of git
+db/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
