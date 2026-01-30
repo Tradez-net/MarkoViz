@@ -1,0 +1,11 @@
+[project]
+name = "markoviz"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "ibapi-stable==10.37.2",
+    "pandas>=3.0.0",
+    "pyarrow>=23.0.0",
+    "pytz>=2025.2",
+]
