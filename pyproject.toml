@@ -2,10 +2,26 @@
 name = "markoviz"
 version = "0.1.0"
 description = "Add your description here"
+readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "marimo==0.19.7",
     "ibapi-stable==10.37.2",
     "pandas>=3.0.0",
     "pyarrow>=23.0.0",
     "pytz>=2025.2",
 ]
+
+[tool.marimo.ai]
+rules = "- prefer polars over pandas\n- make charts using altair"
+
+[tool.marimo.save]
+autosave = "after_delay"
+autosave_delay = 1000
+format_on_save = true
+
+[tool.marimo.package_management]
+manager = "uv"
+
+[tool.marimo.runtime]
+pythonpath = ["./src"]
